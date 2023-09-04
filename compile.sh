@@ -873,7 +873,7 @@ function build_libzip {
 	if cant_use_cache "$libzip_dir"; then
 		rm -rf "$libzip_dir"
 		write_download
-		download_github_src "nih-at/libzip" "$LIBZIP_VERSION" "libzip" | tar -zx >> "$DIR/install.log" 2>&1
+		download_github_src "nih-at/libzip" "v$LIBZIP_VERSION" "libzip" | tar -zx >> "$DIR/install.log" 2>&1
 		write_configure
 		cd "$libzip_dir"
 
