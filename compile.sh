@@ -317,7 +317,7 @@ if [ "$HAVE_OPCACHE_JIT" == "yes" ]; then
   if [ $PHP_VERSION_ID -lt 80400 ]; then
     write_out "WARNING" "JIT in versions below PHP 8.4 is highly unstable and not recommended"
   else
-    write_out "WARNING" "JIT in PHP 8.4 has not been tested, use it with caution"
+   # write_out "WARNING" "JIT in PHP 8.4 has not been tested, use it with caution"
   fi
 else
   write_out "INFO" "JIT support in OPcache won't be compiled"
